@@ -13,6 +13,7 @@ export async function main(ns) {
 		'Nodes.js',
 		'Observatory.js',
 		'Servers-Lite.js',
+		'Servers.js',
 		'Stocks.js',
 		'Stop.js',
 		'Strategist.js',
