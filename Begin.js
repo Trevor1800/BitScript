@@ -27,7 +27,7 @@ export async function main(ns) {
 	// Each service needs a port number and a delay to use as args
 	const dependencies = {
 		'queue-service.js': undefined,
-		'strategist.js': {
+		'Strategist.js': {
 			port: 1,
 			delay: 50
 		}
