@@ -13,13 +13,13 @@ export async function main(ns) {
 	const virus = "Virus-V2.js";
 
 	function logShipAction(ship, action, target) {
-		let variant = "INFO";
+		let variant = "SUCCESS";
 		let icon = "💵";
 		if (action === "weaken") {
-			variant = "ERROR";
+			variant = "INFO";
 			icon = "☠️";
 		} else if (action === "grow") {
-			variant = "SUCCESS";
+			variant = "INFO";
 			icon = "🌱";
 		}
 		ns.print(`${variant}\t ${icon} ${action} @ ${ship.serv} (${ship.threads}) -> ${target}`);
