@@ -20,11 +20,11 @@ export async function main(ns) {
 	function sellStocks(stocks) {
 		for (const stock of stocks) {
 			if (stock.longShares > 0) {
-				const salePrice = ns.stock.sell(stock.sym, stock.longShares);
+				const salePrice = ns.stock.sellStock(stock.sym, stock.longShares);
 				recovered += salePrice;
 			}
 			if (stock.shortShares > 0) {
-				const salePrice = ns.stock.sell(stock.sym, stock.shortShares);
+				const salePrice = ns.stock.sellStock(stock.sym, stock.shortShares);
 				recovered += salePrice;
 			}
 		}
