@@ -29,9 +29,9 @@ export async function main(ns) {
 	};
 
 	const viruses = [
-		'hack-Virus.js',
-		'weaken-Virus.js',
-		'grow-Virus.js'
+		'payload/hack-Virus.js',
+		'payload/weaken-Virus.js',
+		'payload/grow-Virus.js'
 	];
 
 	const virusRam = viruses.reduce((sum, virus) => {
