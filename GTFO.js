@@ -40,7 +40,7 @@ export async function main(ns) {
 	const stocks = getOwnedStocks();
 	sellStocks(stocks);
 
-	ns.tprint(`Total money recovered : ${ns.nFormat(recovered, '$0a')}`);
+	ns.tprint(`Total money recovered : ${ns.formatNumber(recovered)}`);
 
 	// Close all home scripts
 	ns.killall();
